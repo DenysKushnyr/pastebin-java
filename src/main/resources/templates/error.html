@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pastebin</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+    <style>
+        .card ~ .card {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body style="padding-bottom: 6rem">
+
+<header th:replace="header :: header"></header>
+
+<div class="container">
+    <h1 class="text-center mt-5 text-danger">Виникла помилка. Спробуйте пізніше</h1>
+</div>
+</body>
+</html>

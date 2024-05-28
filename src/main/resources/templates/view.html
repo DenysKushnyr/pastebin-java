@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${paste.title}"></title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header th:replace="header :: header"></header>
+
+<div class="container pb-5 pt-4">
+    <h1 class="mb-3 text-center">Перегляд посту</h1>
+    <h3 class="mb-2" th:text="${paste.title}"></h3>
+    <pre class="p-3 rounded-2" style="background-color: #ededed">
+    <code th:text="${paste.content}"></code>
+</pre>
+    <p class="text-secondary">Створено: <span th:text="${paste.createdAt}"></span></p>
+</div>
+</body>
+</html>
